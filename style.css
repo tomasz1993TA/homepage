@@ -1,0 +1,53 @@
+body {
+    background: #E5E4E2;
+}
+
+.mainHeader {
+    color: rgb(90, 90, 90);
+    font-size: 50px;
+}
+
+.sectionHeader {
+    color: #1460AA;
+    font-size: 35px;    
+}
+
+.diaryHeader {
+    color: rgb(177, 10, 33);
+    font-size: 35px;
+}
+
+.indexText {
+    color: darkblue;
+}
+
+.pamietniczek {
+    background: rgb(199, 201, 201);
+}
+
+.footer {
+    background: rgb(199, 201, 201);
+}
+
+.mountainHeader {
+    font-size: 25px;
+    color: darkgray;
+}
+
+.mountainText {
+    font-size: 18px;
+}
+
+.navbar {
+    font-size: 22px;
+    background: gray;    
+}
+
+.mountainsWorldHeader {
+    color: rgb(18, 151, 14);
+    font-size: 35px;
+}
+
+.mountainsWorldSection {
+    background: rgb(154, 199, 171);
+}
