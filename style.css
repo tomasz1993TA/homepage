@@ -40,7 +40,7 @@ body {
 
 .navbar {
     font-size: 22px;
-    background: gray;    
+    background: rgb(75, 75, 75);    
 }
 
 .mountainsWorldHeader {
@@ -50,4 +50,12 @@ body {
 
 .mountainsWorldSection {
     background: rgb(154, 199, 171);
+}
+
+.linkNavbar {
+    color: rgb(173, 173, 173);
+}
+
+.link {
+    color: rgb(36, 102, 243);
 }
