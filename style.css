@@ -21,14 +21,6 @@ body {
     color: darkblue;
 }
 
-.pamietniczek {
-    background: rgb(199, 201, 201);
-}
-
-.footer {
-    background: rgb(199, 201, 201);
-}
-
 .mountainHeader {
     font-size: 25px;
     color: darkgray;
@@ -38,22 +30,13 @@ body {
     font-size: 18px;
 }
 
-.navbar {
-    font-size: 22px;
-    background: rgb(75, 75, 75);    
-}
-
 .mountainsWorldHeader {
     color: rgb(18, 151, 14);
     font-size: 35px;
 }
 
-.mountainsWorldSection {
-    background: rgb(154, 199, 171);
-}
-
 .linkNavbar {
-    color: rgb(173, 173, 173);
+    color: rgb(36, 102, 243);
 }
 
 .link {
