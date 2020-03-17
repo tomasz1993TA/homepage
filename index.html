@@ -10,26 +10,28 @@
 </head>
 
 <body>
-	<header>
-		<a class="linkNavbar" href="index.html">Strona główna</a>
-		<a class="linkNavbar" href="podstrona.html">Podstrona</a>
-		<a class="linkNavbar" href="mountEverest.html">Mount Everest</a>
-		<a class="linkNavbar" href="k2.html">K2</a>
-		<a class="linkNavbar" href="kanczendzonga.html">Kanczendzonga</a>
-		<a class="linkNavbar" href="montBlanc.html">Mont Blanc</a>
-		<a class="linkNavbar" href="matterhorn.html">Matterhorn</a>
-		<a class="linkNavbar" href="gerlach.html">Gerlach</a>
-		<a class="linkNavbar" href="rysy.html">Rysy</a>
+	<header class="navigation">
+		<a class="navigation__link" href="index.html">Strona główna</a>
+		<a class="navigation__link" href="podstrona.html">Podstrona</a>
+		<a class="navigation__link" href="mountEverest.html">Mount Everest</a>
+		<a class="navigation__link" href="k2.html">K2</a>
+		<a class="navigation__link" href="kanczendzonga.html">Kanczendzonga</a>
+		<a class="navigation__link" href="montBlanc.html">Mont Blanc</a>
+		<a class="navigation__link" href="matterhorn.html">Matterhorn</a>
+		<a class="navigation__link" href="gerlach.html">Gerlach</a>
+		<a class="navigation__link" href="rysy.html">Rysy</a>
 	</header>
-	<main>
+	<main class="main">
 		<header>
 			<h1 class="mainHeader">
 				Tomasz Anuszczyk - Strona domowa
 			</h1>
 		</header>
-		<section>
-			<h2 class="sectionHeader">Kim jestem?</h2>
-			<p class="indexText">
+		<section class="about">
+			<div class="box">Test</div>
+			<img src="mountains.png" alt="Widok na góry" class="about__picture" />
+			<h2 class="about__header">Kim jestem?</h2>
+			<p class="indexText, about__paragraph">
 				Hej, na <b>co dzień</b> pracuję w <strong>Instytucie Łączności - Państwowym Instytucie
 					Badawczym</strong> jako
 				programista C#. Ponadto
@@ -38,11 +40,14 @@
 				na siłowni i chodzić po górach.
 				Witam Cię na mojej domowej stronie, mam nadzieję, że znajdzesz tutaj trochę przydatnych rzeczy.
 				<br>
-				<a class="link" href="#pamietniczek">Przejdź do pamiętniczka.</a>
+				<a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka.</a>
+			</p>
+			<p class="about__paragraph about__paragraph--mini about__paragraph--js">
+				Testuję modyfikator.
 			</p>
 		</section>
-		<section>
-			<h2 class="diaryHeader">Pamiętniczek</h2>
+		<section class="diary">
+			<h2 class="diaryHeader" id="pamietniczek">Pamiętniczek</h2>
 			<section>
 				<h3>Jak stworzyć prwidłowego HTML-a?</h3>
 				<p class="indexText">
@@ -55,7 +60,7 @@
 			</section>
 			<section>
 				<h3>Czy nauka frontendu to <em>prosta</em> sprawa?</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Nauka frontendu to przyjemne zajęcie. Do poznania tego świata wystarczą dobre chęci i zacięcie. Gdy
 					poznamy
 					nowe obszary tego świata, i czujemy się w nim pewnie, spada na nas uczucie spełnienia.
@@ -63,7 +68,7 @@
 			</section>
 			<section>
 				<h3>Czy góry pomagają odkryć samego siebie?</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					„Wobec potęgi gór prościej odkrywa się siebie, a przynajmniej to, że większość granic
 					i lęków to tylko ułomność naszego umysłu, poza którą zaczyna się wolność…”
 					<br>
@@ -72,7 +77,7 @@
 			</section>
 			<section>
 				<h3>Prosta definicja sukcesu?</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Cena sukcesu to ciężka praca, poświęcenie i determinacja, by niezależnie od tego czy w danej chwili
 					wygrywamy
 					czy przegrywamy dawać z siebie wszystko.
@@ -86,7 +91,7 @@
 			<h2 class="mountainsWorldHeader">Świat gór</h2>
 			<section>
 				<h3>Mount Everest - matka gór</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
 					Chińskiej Republiki Ludowej.<br>
 					<a class="link" href="mountEverest.html">Przejdź do artykułu o Mount Everest</a>
@@ -94,7 +99,7 @@
 			</section>
 			<section>
 				<h3>K2 - najwyższy szczyt Karakorum</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Ośmiotysięcznik, najwyższy szczyt Karakorum, drugi co do wysokości szczyt Ziemi. Znajduje się na
 					granicy Chin i Pakistanu.<br>
 					<a class="link" href="k2.html">Przejdź do artykułu o K2</a>
@@ -102,21 +107,21 @@
 			</section>
 			<section>
 				<h3>Kanczendzonga - najwyższy punkt Indii</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Drugi co do wysokości szczyt w Himalajach, trzeci co do wysokości szczyt Ziemi.<br>
 					<a class="link" href="kanczendzonga.html">Przejdź do artykułu o Kanczendzonga</a>
 				</p>
 			</section>
 			<section>
 				<h3>Mont Blanc - biała góra</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Najwyższy szczyt Alp położony w Masywie Mont Blanc, w Alpach Graickich, w Alpach Zachodnich.<br>
 					<a class="link" href="montBlanc.html">Przejdź do artykułu o Mont Blanc</a>
 				</p>
 			</section>
 			<section>
 				<h3>Matterhorn - samotna góra</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
 					Chińskiej Republiki Ludowej.<br>
 					<a class="link" href="matterhorn.html">Przejdź do artykułu o Matterhorn</a>
@@ -124,7 +129,7 @@
 			</section>
 			<section>
 				<h3>Gerlach - słowacki olbrzym</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Najwyższy szczyt Tatr oraz całych Karpat i jednocześnie Słowacji, położony w bocznej grani Tatr
 					Wysokich.<br>
 					<a class="link" href="gerlach.html">Przejdź do artykułu o Gerlach</a>
@@ -132,7 +137,7 @@
 			</section>
 			<section>
 				<h3>Rysy - najwyższa góra Polski</h3>
-				<p class="indexText">
+				<p class="indexText, paragraph">
 					Góra położona na granicy polsko-słowackiej, w Tatrach Wysokich<br>
 					<a class="link" href="rysy.html">Przejdź do artykułu o Rysach</a>
 				</p>
@@ -142,6 +147,7 @@
 	</main>
 
 	<footer>
+		<a href="#top" class="top">Na górę</a>
 		Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia WTF: Co ten frontend.		
 	</footer>
 	<script src="main.js"></script>

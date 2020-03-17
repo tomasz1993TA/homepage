@@ -5,11 +5,7 @@ body {
 .mainHeader {
     color: rgb(90, 90, 90);
     font-size: 50px;
-}
-
-.sectionHeader {
-    color: #1460AA;
-    font-size: 35px;    
+    margin-bottom: 48px;
 }
 
 .diaryHeader {
@@ -23,7 +19,7 @@ body {
 
 .mountainHeader {
     font-size: 25px;
-    color: darkgray;
+    color: darkgray;    
 }
 
 .mountainText {
@@ -35,10 +31,76 @@ body {
     font-size: 35px;
 }
 
-.linkNavbar {
+.navigation__link {
     color: rgb(36, 102, 243);
 }
 
-.link {
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 10px solid red;
+    position: sticky;
+    top: 0px;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: gray;
+    text-decoration: none;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+}
+
+.diary {
+    clear: both;
+}
+
+.about {
+    overflow: hidden;
+}
+
+.about__header {
+    color: #1460AA;
+    font-size: 35px;
+}
+
+.about__link {
     color: rgb(36, 102, 243);
+}
+
+.about__paragraph {
+    padding: 16px;
+    font-size: 20px;
+}
+
+.about__paragraph--mini {
+    font-size: 16px;
+}
+
+.about__picture {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
 }
