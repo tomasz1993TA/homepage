@@ -7,25 +7,34 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header class="navigation">
-		<a class="navigation__link" href="index.html">Strona główna</a>
-		<a class="navigation__link" href="podstrona.html">Podstrona</a>
-		<a class="navigation__link" href="mountEverest.html">Mount Everest</a>
-		<a class="navigation__link" href="k2.html">K2</a>
-		<a class="navigation__link" href="kanczendzonga.html">Kanczendzonga</a>
-		<a class="navigation__link" href="montBlanc.html">Mont Blanc</a>
-		<a class="navigation__link" href="matterhorn.html">Matterhorn</a>
-		<a class="navigation__link" href="gerlach.html">Gerlach</a>
-		<a class="navigation__link" href="rysy.html">Rysy</a>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--js">
+				<img src="mountain.png" alt="Symbol góry" class="navigation__picture" />
+				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="mountEverest.html">Mount Everest</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="k2.html">K2</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="kanczendzonga.html">Kanczendzonga</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="montBlanc.html">Mont Blanc</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="matterhorn.html">Matterhorn</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="gerlach.html">Gerlach</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="rysy.html">Rysy</a></li>
+			</ul>
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">☰</button>
+		</nav>
 	</header>
+	<img src="panorama.jpg" alt="Panorama gór" class="panorama" />
 	<main class="main">
 		<header>
-			<h1 class="mainHeader">
+			<h1 class="header__title header__title--js">
 				Tomasz Anuszczyk - Strona domowa
 			</h1>
+			<button class="header__button header__button--js">Zmień nagłówek</button>
 		</header>
 		<section class="about">
 			<div class="box">Test</div>
@@ -42,49 +51,68 @@
 				<br>
 				<a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka.</a>
 			</p>
-			<p class="about__paragraph about__paragraph--mini about__paragraph--js">
-				Testuję modyfikator.
-			</p>
+			<p class="about__paragraph about__paragraph--mini about__paragraph--js">Testuję modyfikator.</p>
+			<section class="hobby">
+				<ul class="hobby__list">
+					<li>programowanie</li>
+					<li>trenowanie</li>
+					<li>filmy</li>
+					<li>układanie planu dnia
+						<ol>
+							<li>Otwórz przeglądarkę</li>
+							<li>Wpisz cotenfrontend.pl</li>
+							<li>[enter]</li>
+						</ol>
+					</li>
+				</ul>
+			</section>
+			<section class="plan">
+			</section>
 		</section>
 		<section class="diary">
 			<h2 class="diaryHeader" id="pamietniczek">Pamiętniczek</h2>
-			<section>
-				<h3>Jak stworzyć prwidłowego HTML-a?</h3>
-				<p class="indexText">
-					Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało niewielu.
-					Jeśli chcesz
-					stać
-					się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu...<br>
-					<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
-				</p>
-			</section>
-			<section>
-				<h3>Czy nauka frontendu to <em>prosta</em> sprawa?</h3>
-				<p class="indexText, paragraph">
-					Nauka frontendu to przyjemne zajęcie. Do poznania tego świata wystarczą dobre chęci i zacięcie. Gdy
-					poznamy
-					nowe obszary tego świata, i czujemy się w nim pewnie, spada na nas uczucie spełnienia.
-				</p>
-			</section>
-			<section>
-				<h3>Czy góry pomagają odkryć samego siebie?</h3>
-				<p class="indexText, paragraph">
-					„Wobec potęgi gór prościej odkrywa się siebie, a przynajmniej to, że większość granic
-					i lęków to tylko ułomność naszego umysłu, poza którą zaczyna się wolność…”
-					<br>
-					- Jacek Teler
-				</p>
-			</section>
-			<section>
-				<h3>Prosta definicja sukcesu?</h3>
-				<p class="indexText, paragraph">
-					Cena sukcesu to ciężka praca, poświęcenie i determinacja, by niezależnie od tego czy w danej chwili
-					wygrywamy
-					czy przegrywamy dawać z siebie wszystko.
-					<br>
-					- Vince Lombardi
-				</p>
-			</section>
+			<div class="grid">
+				<section>
+					<h3>Jak stworzyć prwidłowego HTML-a?</h3>
+					<p class="indexText">
+						Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało
+						niewielu.
+						Jeśli chcesz
+						stać
+						się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu...<br>
+						<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+					</p>
+				</section>
+				<section>
+					<h3>Czy nauka frontendu to <em>prosta</em> sprawa?</h3>
+					<p class="indexText, paragraph">
+						Nauka frontendu to przyjemne zajęcie. Do poznania tego świata wystarczą dobre chęci i zacięcie.
+						Gdy
+						poznamy
+						nowe obszary tego świata, i czujemy się w nim pewnie, spada na nas uczucie spełnienia.
+					</p>
+				</section>
+				<section>
+					<h3>Czy góry pomagają odkryć samego siebie?</h3>
+					<p class="indexText, paragraph">
+						„Wobec potęgi gór prościej odkrywa się siebie, a przynajmniej to, że większość granic
+						i lęków to tylko ułomność naszego umysłu, poza którą zaczyna się wolność…”
+						<br>
+						- Jacek Teler
+					</p>
+				</section>
+				<section>
+					<h3>Prosta definicja sukcesu?</h3>
+					<p class="indexText, paragraph">
+						Cena sukcesu to ciężka praca, poświęcenie i determinacja, by niezależnie od tego czy w danej
+						chwili
+						wygrywamy
+						czy przegrywamy dawać z siebie wszystko.
+						<br>
+						- Vince Lombardi
+					</p>
+				</section>
+			</div>
 		</section>
 
 		<section>
@@ -143,12 +171,49 @@
 				</p>
 			</section>
 		</section>
+		<section class="glossary">
+			<dl>
+				<dt>CSS</dt>
+				<dd>style (to co widzisz jak jest ładne albo brzydkie)</dd>
+				<dt>HTML</dt>
+				<dd>treść + szkielet strony</dd>
+				<dt>JavaScript</dt>
+				<dt>Es6</dt>
+				<dd>rzeczy których teraz się uczę</dd>
+			</dl>
+		</section>
+		<section class="data">
+			<table class="table">
+				<caption>Oceny z I semestru z przedmiotu WTF</caption>
+				<thead>
+					<tr>
+						<th>Imię nazwisko</th>
+						<th>Ocena</th>
+						<th>Data</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Tomasz Anuszczyk</td>
+						<td>5</td>
+						<td>18.03.2020</td>
+					</tr>
+					<tr>
+						<td>Janusz Cebula</td>
+						<td>3</td>
+						<td>17.03.2020</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
 	</main>
 
-	<footer>
-		<a href="#top" class="top">Na górę</a>
-		Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia WTF: Co ten frontend.		
+	<footer class="footer">
+		<a href="#top" class="top">↑ Na górę</a>
+		<p class="footer__text--long"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia WTF: Co ten frontend.</strong></p>
+		<p class="footer__text--short"><strong>Wrocław 2020.</strong></p>
+		
 	</footer>
 	<script src="main.js"></script>
 </body>
