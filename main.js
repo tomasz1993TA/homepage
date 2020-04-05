@@ -32,7 +32,7 @@ console.log(button);
 
 button.addEventListener('click', (e) => {
     const header = document.querySelector('.header__title--js');
-    header.innerHTML = 'Witam na stronie Tomasza';
+    header.innerHTML = 'Witaj na stronie Tomasza';
     header.classList.toggle('header__title--red');
     if (header.classList.contains('header__title--red')) {
         console.log('jest klasa');    

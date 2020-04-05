@@ -48,56 +48,74 @@
 			<button class="header__button header__button--js">Zmień nagłówek</button>
 		</header>
 
-		<section class="about">
-			<h2 class="about__header">Kim jestem?</h2>
-			<p class="indexText, about__paragraph">
-				Hej, na <b>co dzień</b> pracuję w <strong>Instytucie Łączności - Państwowym Instytucie
-					Badawczym</strong> jako
-				programista C#. Ponadto
-				uczę się tajnej sztuki frontendu od Maćka Korsana na kursie WTF: Co ten frontend. Poza tym bardzo lubię
-				trenować
-				na siłowni i chodzić po górach.
-				Witam Cię na mojej domowej stronie, mam nadzieję, że znajdzesz tutaj trochę przydatnych rzeczy.
-				<br>
-				<a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka.</a>
-			</p>
+		<hr class="horizontal-line">
+
+		<section class="about">		
+
+			<div class="grid-for-card">
+				<h2 class="about__header">Kim jestem?</h2>
+				<div class="card">
+					<article class="person">
+						<img class="person__photo" src="img/tomek.png" alt="Zadowolony Tomek">
+						<div>
+							<header class="person__header">
+								<h1 class="person__name">Tomasz Anuszczyk</h1>
+								<span class="person__position">junior developer</span>
+							</header>
+							<p class="person__description">
+								Młodszy programista <strong class="person__special">C# i technologii .NET,</strong> dynamicznie zgłebiający tajemną wiedzę frontendu, sportowiec,
+								turysta i pasjonat filmów w jednym. Uwielbia przemierzać górskie szlaki podziwiając piękno przyrody.
+							</p>                
+						</div>
+					</article>
+					<div class="footer">
+						<p class="footer__description">
+							W sieci jestem na: <img class="footer__icon--facebook" src="img/facebook.png" alt="Ikonka facebooka"><a class="footer__link" href="#">Facebook</a> 
+							<img class="footer__icon--github" src="img/github.png" alt="Ikonka githuba"><a class="footer__link" href="#">GitHub</a> 
+							<img class="footer__icon--linkedin" src="img/linkedin.png" alt="Ikonka linkedina"><a class="footer__link" href="#">LinkedIn</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
 		</section>
 
+		<hr class="horizontal-line">
+
 		<section class="diary">
-			<h2 class="diaryHeader" id="pamietniczek">Pamiętniczek</h2>
+			<h2 class="diaryHeader" id="pamietniczek">Topowe tematy</h2>
 			<div class="grid">
-				<section>
+				<section class="top-section">
 					<h3>Jak stworzyć prwidłowego HTML-a?</h3>
 					<p class="indexText">
 						Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało
 						niewielu.
 						Jeśli chcesz
 						stać
-						się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu...<br>
-						<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+						się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu.
 					</p>
 				</section>
-				<section>
+				<section class="top-section">
 					<h3>Czy nauka frontendu to <em>prosta</em> sprawa?</h3>
-					<p class="indexText, paragraph">
+					<p class="indexText">
 						Nauka frontendu to przyjemne zajęcie. Do poznania tego świata wystarczą dobre chęci i zacięcie.
 						Gdy
 						poznamy
 						nowe obszary tego świata, i czujemy się w nim pewnie, spada na nas uczucie spełnienia.
 					</p>
 				</section>
-				<section>
+				<section class="top-section">
 					<h3>Czy góry pomagają odkryć samego siebie?</h3>
-					<p class="indexText, paragraph">
+					<p class="indexText">
 						„Wobec potęgi gór prościej odkrywa się siebie, a przynajmniej to, że większość granic
 						i lęków to tylko ułomność naszego umysłu, poza którą zaczyna się wolność…”
 						<br>
 						- Jacek Teler
 					</p>
 				</section>
-				<section>
+				<section class="top-section">
 					<h3>Prosta definicja sukcesu?</h3>
-					<p class="indexText, paragraph">
+					<p class="indexText">
 						Cena sukcesu to ciężka praca, poświęcenie i determinacja, by niezależnie od tego czy w danej
 						chwili
 						wygrywamy
@@ -109,10 +127,13 @@
 			</div>
 		</section>
 
-		<section>
-			<h2 class="mountainsWorldHeader">Świat gór</h2>
+		<hr class="horizontal-line">
+
+		<section class="mountain-section">
+			<h2 class="mountainsWorldHeader">Górskie tematy</h2>
 			<div class="grid2">
-				<section class="section--Everest">
+
+				<section class="mountain-section-each">
 					<h3>Mount Everest - matka gór</h3>
 					<p class="indexText, paragraph">
 						Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
@@ -120,42 +141,59 @@
 						<a class="link" href="mountEverest.html">Przejdź do artykułu o Mount Everest</a>
 					</p>
 				</section>
+
 				<section>
 					<img src="mountEverest.jpg" alt="Góra Mount Everest" class="everest" />					
 				</section>
+
 				<section>
+					<img src="k2.jpg" alt="Góra Mount Everest" class="everest" />					
+				</section>
+				
+				<section class="mountain-section-each">
 					<h3>K2 - najwyższy szczyt Karakorum</h3>
 					<p class="indexText, paragraph">
 						Ośmiotysięcznik, najwyższy szczyt Karakorum, drugi co do wysokości szczyt Ziemi. Znajduje się na
-						granicy Chin i Pakistanu.<br>
+						granicy Chin i Pakistanu.<br><br>
 						<a class="link" href="k2.html">Przejdź do artykułu o K2</a>
 					</p>
-				</section>
-				<section>
+				</section>				
+
+				<section class="mountain-section-each">
 					<h3>Matterhorn - samotna góra</h3>
 					<p class="indexText, paragraph">
 						Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
-						Chińskiej Republiki Ludowej.<br>
+						Chińskiej Republiki Ludowej.<br><br>
 						<a class="link" href="matterhorn.html">Przejdź do artykułu o Matterhorn</a>
 					</p>
 				</section>
+
 				<section>
+					<img src="matterhorn.jpg" alt="Góra Mount Everest" class="everest" />					
+				</section>
+
+				<section>
+					<img src="rysy.jpg" alt="Góra Mount Everest" class="everest" />					
+				</section>
+
+				<section class="mountain-section-each">
 					<h3>Rysy - najwyższa góra Polski</h3>
 					<p class="indexText, paragraph">
-						Góra położona na granicy polsko-słowackiej, w Tatrach Wysokich<br>
+						Góra położona na granicy polsko-słowackiej, w Tatrach Wysokich<br><br>
 						<a class="link" href="rysy.html">Przejdź do artykułu o Rysach</a>
 					</p>
-				</section>
+				</section>				
+
 			</section>
 			</div>			
 
 	</main>
 
-	<footer class="footer">
+	<footer class="footer2">
 		<a href="#top" class="top">↑ Na górę</a>
-		<p class="footer__text--long"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia
+		<p class="footer2__text--long"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia
 				WTF: Co ten frontend.</strong></p>
-		<p class="footer__text--short"><strong>Wrocław 2020.</strong></p>
+		<p class="footer2__text--short"><strong>Wrocław 2020.</strong></p>
 	</footer>
 
 	<script src="main.js"></script>
