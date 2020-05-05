@@ -5,9 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Strona Tomasza</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="normalize.css" rel="stylesheet" type="text/css">
+	<link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+	<script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">
 </head>
 
 <body onload="startTime()">
@@ -42,10 +45,10 @@
 	<main class="main">
 
 		<header class="header">
-			<h1 class="header__title header__title--js">
-				Tomasz Anuszczyk - Strona domowa
+			<h1 class="header__title header__title--js" align="center">
+				Strona domowa Tomasza
 			</h1>
-			<button class="header__button header__button--js">Zmień nagłówek</button>
+			<button class="header__button header__button--js" data-micron="bounce">Zmień nagłówek</button>
 		</header>
 
 		<hr class="horizontal-line">
@@ -53,10 +56,10 @@
 		<section class="about">		
 
 			<div class="grid-for-card">
-				<h2 class="about__header">Kim jestem?</h2>
+				<h2 class="about__header vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">Kim jestem?</h2>
 				<div class="card">
 					<article class="person">
-						<img class="person__photo" src="img/tomek.png" alt="Zadowolony Tomek">
+						<img class="person__photo morph" src="img/tomek.png" alt="Zadowolony Tomek">
 						<div>
 							<header class="person__header">
 								<h1 class="person__name">Tomasz Anuszczyk</h1>
@@ -80,13 +83,21 @@
 
 		</section>
 
+		<section class="about--small">
+			<h2 class="about--small__header">Kim jestem?</h2>
+			<p class="about--small__description" align="center">
+				Młodszy programista C# i technologii .NET, dynamicznie zgłebiający tajemną wiedzę frontendu, sportowiec,
+				turysta i pasjonat filmów w jednym. Uwielbia przemierzać górskie szlaki podziwiając piękno przyrody.
+			</p>
+		</section>
+
 		<hr class="horizontal-line">
 
 		<section class="diary">
 			<h2 class="diaryHeader" id="pamietniczek">Topowe tematy</h2>
 			<div class="grid">
 				<section class="top-section">
-					<h3>Jak stworzyć prwidłowego HTML-a?</h3>
+					<h3>Jak stworzyć prawidłowego HTML-a?</h3>
 					<p class="indexText">
 						Tworzenie zgodnego ze standardami <i>HTML-a</i> to sztuka, którą do perfekcji opanowało
 						niewielu.
@@ -134,25 +145,25 @@
 			<div class="grid2">
 
 				<section class="mountain-section-each">
-					<h3>Mount Everest - matka gór</h3>
-					<p class="indexText, paragraph">
+					<h3 class="h3--mountains">Mount Everest - matka gór</h3>
+					<p class="indexText--mountains">
 						Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
 						Chińskiej Republiki Ludowej.<br><br>
 						<a class="link" href="mountEverest.html">Przejdź do artykułu o Mount Everest</a>
 					</p>
 				</section>
 
-				<section>
+				<section class="mountain--photo">
 					<img src="mountEverest.jpg" alt="Góra Mount Everest" class="everest" />					
 				</section>
 
-				<section>
+				<section class="mountain--photo">
 					<img src="k2.jpg" alt="Góra Mount Everest" class="everest" />					
 				</section>
 				
 				<section class="mountain-section-each">
-					<h3>K2 - najwyższy szczyt Karakorum</h3>
-					<p class="indexText, paragraph">
+					<h3 class="h3--mountains">K2 - najwyższy szczyt Karakorum</h3>
+					<p class="indexText--mountains">
 						Ośmiotysięcznik, najwyższy szczyt Karakorum, drugi co do wysokości szczyt Ziemi. Znajduje się na
 						granicy Chin i Pakistanu.<br><br>
 						<a class="link" href="k2.html">Przejdź do artykułu o K2</a>
@@ -160,25 +171,24 @@
 				</section>				
 
 				<section class="mountain-section-each">
-					<h3>Matterhorn - samotna góra</h3>
-					<p class="indexText, paragraph">
-						Najwyższy szczyt Ziemi, ośmiotysięcznik położony w Himalajach Wysokich, na granicy Nepalu i
-						Chińskiej Republiki Ludowej.<br><br>
+					<h3 class="h3--mountains">Matterhorn - samotna góra</h3>
+					<p class="indexText--mountains">
+						Szósty pod względem wysokości samodzielny szczyt alpejski.<br><br>
 						<a class="link" href="matterhorn.html">Przejdź do artykułu o Matterhorn</a>
 					</p>
 				</section>
 
-				<section>
+				<section class="mountain--photo">
 					<img src="matterhorn.jpg" alt="Góra Mount Everest" class="everest" />					
 				</section>
 
-				<section>
+				<section class="mountain--photo">
 					<img src="rysy.jpg" alt="Góra Mount Everest" class="everest" />					
 				</section>
 
 				<section class="mountain-section-each">
-					<h3>Rysy - najwyższa góra Polski</h3>
-					<p class="indexText, paragraph">
+					<h3 class="h3--mountains">Rysy - najwyższa góra Polski</h3>
+					<p class="indexText--mountains">
 						Góra położona na granicy polsko-słowackiej, w Tatrach Wysokich<br><br>
 						<a class="link" href="rysy.html">Przejdź do artykułu o Rysach</a>
 					</p>
@@ -189,9 +199,13 @@
 
 	</main>
 
+	<div class="containerx">
+		<div class="contentx"></div>
+	</div>
+
 	<footer class="footer2">
-		<a href="#top" class="top">↑ Na górę</a>
-		<p class="footer2__text--long"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia
+		<a href="#top" class="top"><img src="up.png" alt="Strzałka do góry" div class="up" />Na górę</a>		
+		<p class="footer2__text--long" align="center"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia
 				WTF: Co ten frontend.</strong></p>
 		<p class="footer2__text--short"><strong>Wrocław 2020.</strong></p>
 	</footer>

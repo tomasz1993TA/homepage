@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strona Tomasza</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <header>
-		<a class="linkNavbar" href="index.html">Strona główna</a>
-		<a class="linkNavbar" href="podstrona.html">Podstrona</a>
-		<a class="linkNavbar" href="mountEverest.html">Mount Everest</a>
-		<a class="linkNavbar" href="k2.html">K2</a>
-		<a class="linkNavbar" href="kanczendzonga.html">Kanczendzonga</a>
-		<a class="linkNavbar" href="montBlanc.html">Mont Blanc</a>
-		<a class="linkNavbar" href="matterhorn.html">Matterhorn</a>
-		<a class="linkNavbar" href="gerlach.html">Gerlach</a>
-		<a class="linkNavbar" href="rysy.html">Rysy</a>
-	</header>
+<body onload="startTime()">
 
-  <main>
-    <article>
+  <header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--js">
+				<li class="navigation__icon"><img src="mountain.png" alt="Symbol góry" class="navigation__picture" /></li>
+				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="mountEverest.html">Mount Everest</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="k2.html">K2</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="matterhorn.html">Matterhorn</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="rysy.html">Rysy</a></li>
+				<li>
+					<div class="timer" id="timer"></div>
+				</li>
+			</ul>
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">☰</button>
+		</nav>
+  </header>
+  
+  <main class="mainSubPage">
+    <article class="articleSubPage">
       <header class="mountainHeader">
         <h1>K2 - najwyższy szczyt Karakorum</h1>
       </header>
-      <p class="mountainText">
+      <p class="mountainText" align="center">
         K2, Czogori – ośmiotysięcznik, najwyższy szczyt Karakorum, drugi co do wysokości szczyt Ziemi. Znajduje się na
         granicy Chin i Pakistanu.
       </p>
-      <footer>
-        <img src="k2.jpg" alt="Zdjęcie gór." /><br>
-        Autorem artykułu jest Lorem Ipsum.
-      </footer>
+      <img class="imgME" src="k2.jpg" alt="Zdjęcie K2." />  
+      
     </article>
   </main>
 
-  <footer>
-    Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia WTF: Co ten frontend.
+  <footer class="footer2">
+		<a href="#top" class="top"><img src="up.png" alt="Strzałka do góry" div class="up" />Na górę</a>
+		<p class="footer2__text--long" align="center"><strong>Strona domowa Tomasza Anuszczyka, wszystkie treści są efetkem szkkolenia
+				WTF: Co ten frontend.</strong></p>
+		<p class="footer2__text--short"><strong>Wrocław 2020.</strong></p>
   </footer>
+
+  <script src="mountains.js"></script>
 </body>
 
 </html>
