@@ -1,7 +1,5 @@
 body {
-    background: lightgrey;
-    min-width: 300px;
-    animation: color-me-in 10s;
+    background: rgb(179, 218, 255);
 }
 
 @keyframes color-me-in {
