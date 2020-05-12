@@ -803,6 +803,7 @@ h3 {
 .slider__button:hover {
     background-color: rgb(87, 207, 255);
     opacity: 1;
+    transform: scale(1.09);
 }
 
 .slider__button::before {
