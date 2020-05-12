@@ -40,6 +40,13 @@
         jest środkowy, znajdujący się w całości na terytorium Słowacji. Wierzchołek północno-zachodni, przez który
         biegnie granica, stanowi najwyżej położony punkt Polski i należy do Korony Europy.
       </p>
+      <div class="slider">
+        <section class="slider__container">
+          <button class="slider__button slider__button--prev" data-button-prev></button>
+          <figure class="slide" data-slide></figure>
+          <button class="slider__button slider__button--next" data-button-next></button>   
+        </section>
+      </div>      
       <img class="imgME" src="rysy.jpg" alt="Zdjęcie Rys." />  
       
     </article>
@@ -53,6 +60,16 @@
   </footer>
   
   <script src="mountains.js"></script>
+  <script>
+    const imageArr = [
+      './images/rysy1.jpg',
+      './images/rysy2.jpg',
+      './images/rysy3.jpg'
+    ]
+
+    const slider = new Slider(imageArr)
+    slider.initializeSlider();
+  </script>
 </body>
 
 </html>

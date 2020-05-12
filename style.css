@@ -773,3 +773,67 @@ h3 {
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+
+.slider {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider__button {
+    outline: 0;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    background-color: rgb(144, 218, 247);
+    color: white;
+    border: none;
+    position: absolute;
+    transition: background-color 0.2s ease-in;
+    opacity: 0.7;
+}
+
+.slider__button:hover {
+    background-color: rgb(87, 207, 255);
+    opacity: 1;
+}
+
+.slider__button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid white;
+    border-bottom: 0;
+    border-right: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.slider__button--prev {
+    left: 0;
+}
+
+.slider__button--prev::before {
+    transform: translate(70%, 60%) rotate(-45deg);
+}
+
+.slider__button--next {
+    right: 0;
+}
+
+.slider__button--next::before {
+    transform: translate(150%, 60%) rotate(135deg);
+}
+
+.slide__image {
+    height: 600px;
+    max-width: 900px;
+}
